@@ -26,11 +26,14 @@ set sidescrolloff=16           " 左右スクロール時の視界を確保
 set sidescroll=1               " 左右スクロールは一文字づつ行う
 
 " ファイル処理関連の設定
-set confirm    " 保存されていないファイルがあるときは終了前に保存確認
-set hidden     " 保存されていないファイルがあるときでも別のファイルを開くことが出来る
-set autoread   " 外部でファイルに変更がされた場合は読みなおす
-set nobackup   " ファイル保存時にバックアップファイルを作らない
-set noswapfile " ファイル編集中にスワップファイルを作らない
+set confirm        " 保存されていないファイルがあるときは終了前に保存確認
+set hidden         " 保存されていないファイルがあるときでも別のファイルを開くことが出来る
+set autoread       " 外部でファイルに変更がされた場合は読みなおす
+"set nobackup      " ファイル保存時にバックアップファイルを作らない
+"set noswapfile    " ファイル編集中にスワップファイルを作らない
+set directory=/tmp " swpファイル出力先
+set backupdir=./   " バックアップファイル出力先
+set undodir=/tmp   " undoファイル出力先
 
 " 検索/置換の設定
 set hlsearch   " 検索文字列をハイライトする
